@@ -1,57 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>LR2_8</title>
 </head>
 <body>
-<p><b id="bb1">Задание 1.</b> Создать программу на JS, изменяющую цвет слова в тексте при наведении курсора мыши (событие Onmouseover,
-    свойство style.color).</p>
-<p><b id="bb2" onclick="font()">Задание 2.</b> Создать программу на JS, изменяющую размер шрифта слова щелчком мыши (событие
-    Onclick, свойство style.fontSize).</p>
-<p><b>Задание 3.</b> Создать программу на JS замены картинки на другую при щелчке мышью с помощью метода getElementById и свойства src.</p>
-<img src="img1.jpg" id="im1" onclick="retim()">
-<p id="pp" onclick="rettx()"><b>Задание 4.</b> Создать программу на JS, заменяющую текст изображением, с использованием метода
-    getElementById и свойства innerHTML.</p>
-<p><b>Задание 5.</b> Создать эффекты увеличения размера рисунка (свойство width) при наведении на него курсора мыши и возврата к первоначальному
-    размеру при уходе курсора с рисунка (событие onmouseout).</p>
-<img src="img4.png" id="im2">
-<p id="ppp"><b>Задание 6.</b> Нарисовать цветную рамку произвольного стиля вокруг любого абзаца при двойном щелчке (событие dblclick) на абзац.</p>
+    <p>
+        <b id="bb1">Задание 1.</b> Создать программу на JS, изменяющую цвет слова в тексте при наведении курсора мыши (событие Onmouseover,
+        свойство style.color).
+    </p>
+    <p>
+        <b id="bb2" onclick="font()">Задание 2.</b> Создать программу на JS, изменяющую размер шрифта слова щелчком мыши (событие
+        Onclick, свойство style.fontSize).
+    </p>
+    <p>
+        <b>Задание 3.</b> Создать программу на JS замены картинки на другую при щелчке мышью с помощью метода getElementById и свойства src.
+    </p>
+    <img src="images/img1.jpg" id="im1" onclick="retim()">
+    <p id="pp" onclick="rettx()">
+        <b>Задание 4.</b> Создать программу на JS, заменяющую текст изображением, с использованием метода
+        getElementById и свойства innerHTML.
+    </p>
+    <p>
+        <b>Задание 5.</b> Создать эффекты увеличения размера рисунка (свойство width) при наведении на него курсора мыши и возврата к первоначальному
+        размеру при уходе курсора с рисунка (событие onmouseout).
+    </p>
+    <img src="images/img4.png" id="im2">
+    <p id="ppp">
+        <b>Задание 6.</b> Нарисовать цветную рамку произвольного стиля вокруг любого абзаца при двойном щелчке (событие dblclick) на абзац.
+    </p>
 
-
-<script type="text/javascript">
-    var a = document.getElementById('bb1');
-        a.onmouseover = function () {
-            a.style.color = "red";
-        };
-
-    function font() {
-        var b = document.getElementById('bb2');
-        b.style.fontSize = "30px";
-    }
-
-    function retim() {
-        document.getElementById('im1').src='img2.jpg';
-    }
-
-    function rettx() {
-        var c = document.getElementById('pp');
-        c.innerHTML = "<img src='img3.jpg'/>";
-    }
-
-    var d = document.getElementById('im2');
-    d.onmouseover = function () {
-        d.style.width = "300px";
-    };
-    d.onmouseout = function () {
-        d.style.width = "250px";
-    };
-
-    var r = document.getElementById("ppp");
-    r.ondblclick = function () {
-        r.style.border = "2px solid blue";
-    }
-</script>
-
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
